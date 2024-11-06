@@ -1,0 +1,45 @@
+<h1 class="title">Customer List</h1>
+<button id="addCustomerButton">Add New Customer</button>
+<table>
+  <thead>
+    <tr>
+      <th>customerID</th>
+      <th>name</th>
+      <th>email</th>
+      <th>phone</th>
+      <th>actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each customers}}
+    <tr>
+      <td>{{customerID}}</td>
+      <td>{{name}}</td>
+      <td>{{email}}</td>
+      <td>{{phone}}</td>
+      <td>
+        <button class="editButton" data-id="{{customerID}}" data-name="{{name}}" data-email="{{email}}" data-phone="{{phone}}">Edit</button>
+        <button class="deleteButton" data-name="{{name}}">Delete</button>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<div class="popup-overlay" id="popupOverlay">
+  <div class="popup">
+    <span class="popup-close" id="popupClose">&times;</span>
+    <h2 id="popupTitle">Edit Customer</h2>
+    <form id="customerForm" novalidate>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone">
+      <button type="submit">Save</button>
+    </form>
+  </div>
+</div>
+
+<script src="/js/customersScript.js"></script>

@@ -1,0 +1,20 @@
+[
+    { 
+      "customerID": 1, 
+      "name": "Party Inc", 
+      "email": "partyinc@email.com", 
+      "phone": "916-444-2535" 
+    },
+    { 
+      "customerID": 2, 
+      "name": "The Corner Bakery", 
+      "email": "cornerbakery@email.com", 
+      "phone": "530-444-3434" 
+    },
+    { 
+      "customerID": 3, 
+      "name": "Cookie Cutters", 
+      "email": "cookiecutters@email.com", 
+      "phone": "530-444-1212" 
+    }
+]

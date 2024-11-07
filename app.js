@@ -23,8 +23,6 @@ app.use(function (req, res, next) {
 app.use(express.json())
 app.use(express.static('static'))
 
-var customersData = require('./customersData.json')
-
 /*
   ROUTES
 */
@@ -33,7 +31,27 @@ app.get('/', function (req, res, next) {
 })
 
 app.get('/customers', function (req, res, next) {
+  var customersData = require('./database/customersData.json')
+
   res.status(200).render('customersPage', {customers: customersData})
+})
+
+app.get('/orders', function (req, res, next) {
+  var ordersData = require('./database/ordersData.json')
+
+  res.status(200).render('ordersPage', {orders: ordersData})
+})
+
+app.get('/employees', function (req, res, next) {
+  var employeesData = require('./database/employeesData.json')
+
+  res.status(200).render('employeesPage', {employees: employeesData})
+})
+
+app.get('/products', function (req, res, next) {
+  var productsData = require('./database/productsData.json')
+
+  res.status(200).render('productsPage', {products: productsData})
 })
 
 app.get('*', function (req, res, next) {

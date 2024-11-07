@@ -1,0 +1,23 @@
+[
+    {
+        "productsID": 1,
+        "type": "Cake",
+        "size": 9,
+        "flavor": "Chocolate",
+        "price": 55
+    },
+    {
+        "productsID": 2,
+        "type": "Cake",
+        "size": 9,
+        "flavor": "Vanilla",
+        "price": 55
+    },
+    {
+        "productsID": 3,
+        "type": "Cookie",
+        "size": null,
+        "flavor": "Chocolate Chip",
+        "price": 2.75
+    }
+]

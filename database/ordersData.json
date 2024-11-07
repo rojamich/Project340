@@ -1,0 +1,31 @@
+[
+    {
+      "orderID": 1,
+      "orderedDateTime": "2024-10-10 08:00:00",
+      "pickUpDateTime": "2024-10-12 15:00:00",
+      "orderStatus": "Complete",
+      "customerID": 1
+    },
+    {
+      "orderID": 2,
+      "orderedDateTime": "2024-10-11 09:30:00",
+      "pickUpDateTime": "2024-10-13 14:00:00",
+      "orderStatus": "Complete",
+      "customerID": 2
+    },
+    {
+      "orderID": 3,
+      "orderedDateTime": "2024-10-12 10:00:00",
+      "pickUpDateTime": "2024-10-13 10:00:00",
+      "orderStatus": "Finished. Pending Pick Up.",
+      "customerID": 3
+    },
+    {
+      "orderID": 4,
+      "orderedDateTime": "2024-10-12 11:00:00",
+      "pickUpDateTime": "2024-10-12 10:00:00",
+      "orderStatus": "In Progress",
+      "customerID": 1
+    }
+  ]
+  

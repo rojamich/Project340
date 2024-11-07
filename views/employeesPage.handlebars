@@ -1,0 +1,51 @@
+<h1 class="title">Employees</h1>
+<button class="addButton" id="addEmployeesButton">Add New Employee</button>
+<table>
+  <thead>
+    <tr>
+      <th>employeeID</th>
+      <th>name</th>
+      <th>position</th>
+      <th>email</th>
+      <th>phone</th>
+      <th>actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each employees}}
+    <tr>
+      <td>{{employeeID}}</td>
+      <td>{{name}}</td>
+      <td>{{position}}</td>
+      <td>{{email}}</td>
+      <td>{{phone}}</td>
+      <td>
+        <button class="editButton" data-employeeID="{{employeeID}}" data-name="{{name}}" data-position="{{position}}" data-email="{{email}}" data-phone="{{phone}}">Edit</button>
+        <button class="deleteButton" data-name="{{name}}">Delete</button>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<div class="popup-overlay" id="popupOverlay">
+  <div class="popup">
+    <span class="popup-close" id="popupClose">&times;</span>
+    <h2 id="popupTitle">Edit Employee</h2>
+    <form id="employeesForm" novalidate>
+      <label for="employeeID">Employee ID:</label>
+      <input type="text" id="employeeID" name="employeeID">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <label for="position">Position:</label>
+      <input type="text" id="position" name="position">
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email">
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone">
+      <button type="submit">Save</button>
+    </form>
+  </div>
+</div>
+
+<script src="/js/employeesScript.js"></script>

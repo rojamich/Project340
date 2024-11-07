@@ -1,0 +1,30 @@
+[
+    {
+        "employeeID": 1,
+        "name": "Emily Emerson",
+        "position": "Manager",
+        "email": "eemerson@email.com",
+        "phone": "916-555-1234"
+    },
+    {
+        "employeeID": 2,
+        "name": "Sarah Smith",
+        "position": "Decorator",
+        "email": "ssmith@email.com",
+        "phone": "916-555-5678"
+    },
+    {
+        "employeeID": 3,
+        "name": "John Mayfield",
+        "position": "Baker",
+        "email": "jmayfield@email.com",
+        "phone": "530-555-9101"
+    },
+    {
+        "employeeID": 4,
+        "name": "Sally Johnson",
+        "position": "Clerk",
+        "email": "sjohnson@email.com",
+        "phone": "530-525-9201"
+    }
+]

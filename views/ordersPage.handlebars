@@ -1,0 +1,51 @@
+<h1 class="title">Orders</h1>
+<button class="addButton" id="addOrdersButton">Add New Order</button>
+<table>
+  <thead>
+    <tr>
+      <th>orderID</th>
+      <th>orderedDateTime</th>
+      <th>pickUpDateTime</th>
+      <th>orderStatus</th>
+      <th>customerID</th>
+      <th>actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each orders}}
+    <tr>
+      <td>{{orderID}}</td>
+      <td>{{orderedDateTime}}</td>
+      <td>{{pickUpDateTime}}</td>
+      <td>{{orderStatus}}</td>
+      <td>{{customerID}}</td>
+      <td>
+        <button class="editButton" data-orderID="{{orderID}}" data-ordered="{{orderedDateTime}}" data-pickedUp="{{pickUpDateTime}}" data-status="{{orderStatus}}" data-customer="{{customerID}}">Edit</button>
+        <button class="deleteButton" data-orderID="{{orderID}}">Delete</button>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<div class="popup-overlay" id="popupOverlay">
+  <div class="popup">
+    <span class="popup-close" id="popupClose">&times;</span>
+    <h2 id="popupTitle">Edit Order</h2>
+    <form id="ordersForm" novalidate>
+      <label for="orderID">Order ID:</label>
+      <input type="text" id="orderID" name="orderID">
+      <label for="ordered">Ordered:</label>
+      <input type="text" id="ordered" name="ordered">
+      <label for="pickedUp">Picked Up:</label>
+      <input type="text" id="pickedUp" name="pickedUp">
+      <label for="status">Status:</label>
+      <input type="text" id="status" name="status">
+      <label for="customer">Customer ID:</label>
+      <input type="text" id="customer" name="customer">
+      <button type="submit">Save</button>
+    </form>
+  </div>
+</div>
+
+<script src="/js/ordersScript.js"></script>

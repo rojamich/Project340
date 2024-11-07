@@ -9,6 +9,28 @@
   margin-top: 20px;
 }
 
+.addButton {
+  margin: 20px auto;
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid darkgray;
+  padding: 8px;
+}
+
+th {
+  background-color: lightblue;
+}
+
 /*---------------------------------------
     Popups
 ---------------------------------------*/
@@ -109,29 +131,4 @@ nav ul li a:hover {
   text-align: center;
   font-size: larger;
   color: #555;
-}
-
-/*---------------------------------------
-    Customers
----------------------------------------*/
-#addCustomerButton {
-  margin: 20px auto;
-  display: block;
-  padding: 10px;
-  cursor: pointer;
-}
-
-table {
-  width: 80%;
-  margin: 20px auto;
-  border-collapse: collapse;
-}
-
-table, th, td {
-  border: 1px solid darkgray;
-  padding: 8px;
-}
-
-th {
-  background-color: lightblue;
 }

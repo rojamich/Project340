@@ -7,8 +7,8 @@ DROP TABLE IF EXISTS Customers, Orders, Employees, Products, ProductsInOrders;
 ----- Base Tables --------------------------------------------------
 CREATE OR REPLACE Table Customers (
     customerID int NOT NULL AUTO_INCREMENT,
-    name varchar(45) NOT NULL,
-    email varchar(45),
+    name varchar(50) NOT NULL,
+    email varchar(255),
     phone varchar(45),
     PRIMARY KEY (customerID)
 );
@@ -29,9 +29,9 @@ CREATE OR REPLACE Table Orders (
 
 CREATE OR REPLACE Table Employees (
     employeeID int NOT NULL AUTO_INCREMENT,
-    name varchar(45) NOT NULL,
-    position varchar(45) NOT NULL,
-    email varchar(45), 
+    name varchar(50) NOT NULL,
+    position varchar(50) NOT NULL,
+    email varchar(255), 
     phone varchar(45),
     PRIMARY KEY (employeeID)
 );
